@@ -207,6 +207,11 @@ new=y_pred[:len(names1)]
 from sklearn.metrics import accuracy_score
 print('The accuracy score is:',accuracy_score(names1,new))
 
+f=open('output.txt')
+for item in y_pred:
+    f.write(item)
+
+
 
 
 
